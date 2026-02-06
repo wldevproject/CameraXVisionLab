@@ -38,6 +38,14 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+
+    // depends on analyzer contract
+    implementation(project(":core:analyzer"))
+    // CameraX base analyzer
+    implementation(project(":core:camerax"))
+    // EXPLICIT CameraX API (WAJIB)
+    implementation(libs.androidx.camera.core)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
