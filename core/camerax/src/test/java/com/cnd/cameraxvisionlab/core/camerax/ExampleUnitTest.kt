@@ -1,4 +1,4 @@
-package com.cnd.core_vision
+package com.cnd.cameraxvisionlab.core.camerax
 
 import org.junit.Test
 
