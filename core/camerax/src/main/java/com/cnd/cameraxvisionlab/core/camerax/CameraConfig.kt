@@ -1,4 +1,4 @@
-package com.cnd.core_camerax
+package com.cnd.cameraxvisionlab.core.camerax
 
 import androidx.camera.core.CameraSelector
 

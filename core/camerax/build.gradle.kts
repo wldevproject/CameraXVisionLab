@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.yourname.cameraxvisionlab.core.camerax"
+    namespace = "com.cnd.cameraxvisionlab.core.camerax"
     compileSdk {
         version = release(36)
     }

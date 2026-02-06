@@ -1,9 +1,10 @@
-package com.cnd.core_camerax
+package com.cnd.cameraxvisionlab.core.camerax
 
 import android.content.Context
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageAnalysis
 import androidx.camera.core.Preview
+import androidx.camera.core.UseCase
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import androidx.core.content.ContextCompat
@@ -45,7 +46,7 @@ class CameraXProvider(
             .requireLensFacing(config.lensFacing)
             .build()
 
-        val useCases = mutableListOf<androidx.camera.core.UseCase>()
+        val useCases = mutableListOf<UseCase>()
 
         if (config.enablePreview && previewView != null) {
             val preview = Preview.Builder().build().apply {
