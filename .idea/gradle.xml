@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/core/analyzer" />
             <option value="$PROJECT_DIR$/core/camerax" />
             <option value="$PROJECT_DIR$/core/vision" />
           </set>

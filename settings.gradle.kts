@@ -23,3 +23,4 @@ rootProject.name = "CameraXVisionLab"
 include(":app")
 include(":core:camerax")
 include(":core:vision")
+include(":core:analyzer")
