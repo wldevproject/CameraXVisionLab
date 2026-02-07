@@ -1,10 +1,11 @@
-package com.cnd.cameraxvisionlab.app.view
+package com.cnd.cameraxvisionlab.app.view.preview
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.cnd.cameraxvisionlab.app.view.R
 
 class PreviewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
