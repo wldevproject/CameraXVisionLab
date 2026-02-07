@@ -18,14 +18,12 @@ import com.cnd.cameraxvisionlab.core.camerax.CameraConfig
 import com.cnd.cameraxvisionlab.core.camerax.CameraXProvider
 import com.cnd.cameraxvisionlab.core.vision.color.*
 
-
-
 @Composable
 fun PreviewScreen() {
     val context = LocalContext.current
     val lifecycleOwner = LocalLifecycleOwner.current
 
-    // logic permission
+    // 🔐 Runtime permission
     var hasCameraPermission by remember {
         mutableStateOf(
             ContextCompat.checkSelfPermission(
@@ -51,9 +49,10 @@ fun PreviewScreen() {
         Text("Waiting for camera permission…")
         return
     }
+
     var colorText by remember { mutableStateOf("Color: -") }
 
-    // Hardcoded calibration (BENAR di app layer)
+    // 🔴 Hardcoded calibration (sementara, valid)
     val redCalibration = remember {
         ColorCalibration(
             category = ColorCategory.RED,
@@ -68,10 +67,11 @@ fun PreviewScreen() {
         )
     }
 
+    // ✅ SIGNATURE BENAR (2 PARAMETER)
     val analyzer = remember {
         HsvColorAnalyzer(
             calibration = redCalibration
-        ) { result ->
+        ) { result, _ ->
             colorText = "Color: ${result.category}"
         }
     }
@@ -100,8 +100,7 @@ fun PreviewScreen() {
 
         Text(
             text = colorText,
-            modifier = Modifier
-                .padding(16.dp)
+            modifier = Modifier.padding(16.dp)
         )
     }
 }
