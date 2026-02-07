@@ -1,11 +1,15 @@
 # CameraX Vision Labs
 
 > Experimental & educational project for exploring CameraX capabilities.
+
 ---
+
 ## 🌐 Language
 - [English](#english)
 - [Bahasa Indonesia](#bahasa-indonesia)
+
 ---
+
 ## English
 
 ### 📌 Overview
@@ -58,6 +62,47 @@ This project focuses on:
 - ❌ Not production-ready
 - ❌ No stability guarantee
 - ✅ Safe for learning & exploration
+
+---
+
+### ✅ Current Capabilities & Progress
+
+> This project is under active experimentation.  
+> Features may change, break, or be removed at any time.
+
+#### Camera & Analysis
+- [x] CameraX preview
+- [x] ImageAnalysis pipeline
+- [x] Real-time frame access
+- [ ] Orientation & rotation handling
+- [ ] FPS monitoring & performance metrics
+
+#### Vision Experiments
+- [ ] Image pre-processing (resize, blur, normalization)
+- [ ] Color detection (HSV-based)
+- [ ] Shape detection (circle / contour)
+- [ ] Object position estimation (left / center / right)
+- [ ] Object size → distance estimation
+
+#### Architecture
+- [x] Multi-module Gradle setup
+- [x] Modular separation (early stage)
+- [ ] Fully isolated camera module
+- [ ] Reusable vision processing module
+- [ ] Clear domain / decision layer
+
+#### UI Experiments
+- [x] Classic Activity (XML)
+- [x] Jetpack Compose
+- [x] Hybrid UI approach
+- [ ] Debug overlay (bounding boxes, text)
+- [ ] Runtime feature toggles
+
+#### Experimental Status
+- [x] Educational / lab-focused
+- [x] Not production-ready
+- [ ] Performance benchmarking
+- [ ] Comparative experiments (OpenCV vs alternatives)
 
 ---
 
@@ -115,3 +160,42 @@ Proyek ini mencakup:
 - ✅ Cocok untuk belajar & eksplorasi
 
 ---
+
+### ✅ Kemampuan & Progres Saat Ini
+
+> Proyek ini masih dalam tahap eksperimen aktif.  
+> Fitur dapat berubah, rusak, atau dihapus sewaktu-waktu.
+
+#### Kamera & Analisis
+- [x] Preview CameraX
+- [x] Pipeline ImageAnalysis
+- [x] Akses frame secara real-time
+- [ ] Penanganan rotasi & orientasi
+- [ ] Monitoring FPS & performa
+
+#### Eksperimen Vision
+- [ ] Pre-processing gambar (resize, blur, normalisasi)
+- [ ] Deteksi warna (HSV)
+- [ ] Deteksi bentuk (lingkaran / kontur)
+- [ ] Estimasi posisi objek (kiri / tengah / kanan)
+- [ ] Estimasi jarak berdasarkan ukuran objek
+
+#### Arsitektur
+- [x] Setup multi-module Gradle
+- [x] Pemisahan modul (tahap awal)
+- [ ] Modul kamera terisolasi penuh
+- [ ] Modul vision yang reusable
+- [ ] Layer domain / decision yang jelas
+
+#### Eksperimen UI
+- [x] Activity klasik (XML)
+- [x] Jetpack Compose
+- [x] Pendekatan UI hybrid
+- [ ] Overlay debug (bounding box, teks)
+- [ ] Toggle fitur saat runtime
+
+#### Status Eksperimental
+- [x] Fokus edukasi / lab
+- [x] Bukan untuk production
+- [ ] Benchmark performa
+- [ ] Eksperimen perbandingan (OpenCV vs alternatif)
