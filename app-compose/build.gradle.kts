@@ -51,6 +51,13 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
     implementation(libs.core.ktx)
+
+    // Core modules
+    implementation(project(":core:camerax"))
+    implementation(project(":core:vision"))
+    implementation(project(":core:analyzer"))
+    implementation(libs.androidx.camera.view)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
