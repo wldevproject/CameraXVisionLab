@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cnd.cameraxvisionlab.app.compose">
 
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
 
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -15,10 +16,61 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CameraXVisionLab">
         <activity
-            android:name=".MainActivity"
+            android:name=".labs.j_debug_analyzer.DebugAnalyzerComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_debug_analyzer_compose"
+            android:theme="@style/Theme.CameraXVisionLab" />
+        <activity
+            android:name=".labs.i_qr_scanner.QrScannerComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_qr_scanner_compose"
+            android:theme="@style/Theme.CameraXVisionLab" />
+        <activity
+            android:name=".labs.h_document_scanner.DocumentScannerComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_document_scanner_compose"
+            android:theme="@style/Theme.CameraXVisionLab" />
+        <activity
+            android:name=".labs.g_face_detection.FaceDetectionComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_face_detection_compose"
+            android:theme="@style/Theme.CameraXVisionLab" />
+        <activity
+            android:name=".labs.f_object_tracking.ObjectTrackingComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_object_tracking_compose"
+            android:theme="@style/Theme.CameraXVisionLab" />
+        <activity
+            android:name=".labs.e_distance_estimation.DistanceEstimationComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_distance_estimation_compose"
+            android:theme="@style/Theme.CameraXVisionLab" />
+        <activity
+            android:name=".labs.d_position_detection.PositionDetectionComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_position_detection_compose"
+            android:theme="@style/Theme.CameraXVisionLab" />
+        <activity
+            android:name=".labs.c_object_detection.ObjectDetectionComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_object_detection_compose"
+            android:theme="@style/Theme.CameraXVisionLab" />
+        <activity
+            android:name=".labs.b_color_detection.ColorDetectionComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_color_detection_compose"
+            android:theme="@style/Theme.CameraXVisionLab" />
+        <activity
+            android:name=".labs.a_camera_preview.CameraPreviewComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_camera_preview_compose"
+            android:theme="@style/Theme.CameraXVisionLab" />
+        <activity
+            android:name=".MainMenuComposeActivity"
             android:exported="true"
-            android:label="@string/app_name"
+            android:label="@string/title_activity_main"
             android:theme="@style/Theme.CameraXVisionLab">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

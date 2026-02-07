@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="26dp"
+        android:paddingVertical="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi! I'm CameraX Classic version"
+            android:layout_marginBottom="50dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnBackground"/>
+
+        <Button
+            android:id="@+id/btnCameraPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📸 Camera Preview"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnColorDetection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎨 Color Detection"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnObjectDetection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📦 Object Detection"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnPositionDetection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📍 Position Detection"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnDistanceEstimation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📏 Distance Estimation"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnObjectTracking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔄 Object Tracking"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnFaceDetection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🙂 Face Detection"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnDocumentScanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📄 Document Scanner"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnQrScanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔳 QR / Barcode Scanner"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnDebugAnalyzer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🧪 Debug and Analyzer"/>
+
+    </LinearLayout>
+</ScrollView>

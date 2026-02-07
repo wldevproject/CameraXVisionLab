@@ -48,6 +48,8 @@ dependencies {
     implementation(project(":core:camerax"))
     implementation(project(":core:vision"))
     implementation(project(":core:analyzer"))
+
+    // CameraX UI
     implementation(libs.androidx.camera.view)
 
     testImplementation(libs.junit)

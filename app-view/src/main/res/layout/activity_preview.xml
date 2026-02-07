@@ -8,12 +8,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <com.cnd.cameraxvisionlab.app.view.overlay.TapOverlayView
+    <com.cnd.cameraxvisionlab.app.view.calibrate.overlay.TapOverlayView
         android:id="@+id/tapOverlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <com.cnd.cameraxvisionlab.app.view.debug.DebugPanelView
+    <com.cnd.cameraxvisionlab.app.view.calibrate.debug.DebugPanelView
         android:id="@+id/debugPanel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

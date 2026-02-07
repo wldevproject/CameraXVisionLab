@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cnd.cameraxvisionlab.app.view">
 
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
 
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -15,10 +16,45 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CameraXVisionLab">
         <activity
-            android:name=".preview.PreviewActivity"
+            android:name=".labs.j_debug_analyzer.DebugAnalyzerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".labs.i_qr_scanner.QrScannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".labs.h_document_scanner.DocumentScannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".labs.g_face_detection.FaceDetectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".labs.f_object_tracking.ObjectTrackingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".labs.e_distance_estimation.DistanceEstimationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".labs.d_position_detection.PositionDetectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".labs.c_object_detection.ObjectDetectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".labs.b_color_detection.ColorDetectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".labs.a_camera_preview.CameraPreviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".calibrate.preview.PreviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenuViewActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -5,15 +5,44 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_marginHorizontal="26dp"
+    tools:context=".LauncherActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hi! I'am Camerax"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Hi! I'm CameraX"
+        android:layout_marginBottom="50dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/btnClassic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btnClassic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Classic (View)"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintBottom_toTopOf="@id/btnCompose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnCompose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compose"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/btnClassic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

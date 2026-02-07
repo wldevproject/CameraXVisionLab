@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">AppCompose</string>
+    <string name="app_name">App Compose</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_camera_preview_compose">CameraPreviewComposeActivity</string>
+    <string name="title_activity_color_detection_compose">ColorDetectionComposeActivity</string>
+    <string name="title_activity_object_detection_compose">ObjectDetectionComposeActivity</string>
+    <string name="title_activity_position_detection_compose">PositionDetectionComposeActivity
+    </string>
+    <string name="title_activity_distance_estimation_compose">DistanceEstimationComposeActivity
+    </string>
+    <string name="title_activity_object_tracking_compose">ObjectTrackingComposeActivity</string>
+    <string name="title_activity_face_detection_compose">FaceDetectionComposeActivity</string>
+    <string name="title_activity_document_scanner_compose">DocumentScannerComposeActivity</string>
+    <string name="title_activity_qr_scanner_compose">QrScannerComposeActivity</string>
+    <string name="title_activity_debug_analyzer_compose">DebugAnalyzerComposeActivity</string>
 </resources>
