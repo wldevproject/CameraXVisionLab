@@ -13,4 +13,5 @@
     <string name="title_activity_document_scanner_compose">DocumentScannerComposeActivity</string>
     <string name="title_activity_qr_scanner_compose">QrScannerComposeActivity</string>
     <string name="title_activity_debug_analyzer_compose">DebugAnalyzerComposeActivity</string>
+    <string name="title_activity_preview">PreviewActivity</string>
 </resources>

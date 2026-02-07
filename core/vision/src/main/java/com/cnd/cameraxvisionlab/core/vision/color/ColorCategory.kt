@@ -7,5 +7,8 @@ enum class ColorCategory {
     YELLOW,
     BLACK,
     WHITE,
+    GRAY,
+    ORANGE,
+    PURPLE,
     UNKNOWN
 }
