@@ -15,6 +15,8 @@
 
 ## 🧱 Project Structure
 
+Project Structure
+````
 root
 ├── app                 # Launcher (choose Classic / Compose)
 ├── app-view            # Classic View-based implementation
@@ -23,7 +25,7 @@ root
     ├── camerax         # CameraX provider & lifecycle handling
     ├── analyzer        # Frame & vision base abstraction
     └── vision          # Vision algorithms (color, object, etc)
-
+````
 ---
 
 ## 🧠 Design Principles
