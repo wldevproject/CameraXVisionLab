@@ -1,201 +1,143 @@
-# CameraX Vision Labs
+# 📸 CameraX Vision Labs
 
-> Experimental & educational project for exploring CameraX capabilities.
-
----
-
-## 🌐 Language
-- [English](#english)
-- [Bahasa Indonesia](#bahasa-indonesia)
+> Experimental & educational project for exploring **CameraX-based vision features** on Android, implemented in **Classic View (XML)** and **Jetpack Compose** side by side.
 
 ---
 
-## English
+## 🎯 Project Goals
 
-### 📌 Overview
-**CameraX Vision Labs** is an **experimental laboratory project** designed to explore and understand what can be built using **CameraX** on Android.
+- Build a **CameraX vision playground**
+- Compare **Classic View vs Jetpack Compose**
+- Keep **camera & vision logic reusable**
+- Focus on **learning and experimentation**, not production
 
-This project is **not intended for production use**.  
-It is a **learning playground** to test, break, and experiment with camera-based features and vision pipelines.
+---
 
-### 🎯 Project Goals
-- Learn **CameraX fundamentals** and advanced usage
-- Explore **real-time image analysis**
-- Implement **computer vision pipelines** (OpenCV / image processing)
-- Experiment with **multi-module architecture**
-- Combine **classic Activity-based UI** and **Jetpack Compose**
-- Test different approaches without production constraints
+## 🧱 Project Structure
 
-### 🧪 Experimental Scope
-This project focuses on:
-- Camera preview & analysis
-- Frame processing & transformation
-- Color and shape detection
-- Object position & size estimation
-- Performance testing (FPS, latency)
-- Architectural experiments
+root
+├── app                 # Launcher (choose Classic / Compose)
+├── app-view            # Classic View-based implementation
+├── app-compose         # Jetpack Compose implementation
+└── core
+    ├── camerax         # CameraX provider & lifecycle handling
+    ├── analyzer        # Frame & vision base abstraction
+    └── vision          # Vision algorithms (color, object, etc)
 
-> ⚠️ Expect unfinished features, breaking changes, and refactors.
+---
 
-### 🧱 Architecture Experiments
-- Multi-module project structure
-- Separation of:
-    - Camera layer
-    - Vision processing
-    - Decision logic
-    - UI layer
-- Hybrid UI:
-    - XML + classic Activities
-    - Jetpack Compose
+## 🧠 Design Principles
 
-### 🛠️ Technologies
-- Kotlin
-- CameraX
-- OpenCV (optional / experimental)
-- Jetpack Compose
-- Android View System (XML)
-- Gradle multi-module setup
+- Camera logic lives in **core**
+- Vision algorithms live in **core/vision**
+- UI only displays results
+- Classic & Compose **share the same logic**
+- One feature = one Activity
+- No feature-per-module (flat & readable)
+- Designed for clarity over abstraction
 
-### 🚧 Project Status
-**LAB / EXPERIMENTAL**
+---
 
+## ✅ Feature Progress Checklist
+
+### 🧭 Navigation & Architecture
+- [x] Multi-app launcher (Classic / Compose)
+- [x] Android 11+ safe app navigation
+- [x] Shared `CameraXProvider`
+- [x] Clean separation: UI vs Camera vs Vision
+
+---
+
+### 📋 Menu
+- [x] Classic Menu (XML + Activity)
+- [x] Compose Menu (Composable)
+- [x] Identical navigation flow
+
+---
+
+### 📸 Camera Preview
+- [x] Classic Camera Preview
+- [x] Compose Camera Preview (`AndroidView + PreviewView`)
+- [x] Permission handling
+- [x] Lifecycle-safe camera binding
+
+---
+
+### 🎨 Color Detection (STEP D)
+- [x] Classic Color Detection
+- [x] Compose Color Detection
+- [x] HSV-based color probing
+- [x] Custom `ColorProbeAnalyzer`
+- [x] Real-time UI overlay (text only)
+- [ ] Color calibration flow (planned)
+
+---
+
+### 📍 Position / Distance / Tracking
+- [ ] Position Detection (left / center / right)
+- [ ] Distance Estimation
+- [ ] Object Tracking
+
+---
+
+### 🙂 Face / 📄 Document / 🔳 QR
+- [ ] Face Detection
+- [ ] Document Scanner
+- [ ] QR / Barcode Scanner
+
+---
+
+### 🧪 Debug & Analyzer
+- [ ] FPS overlay
+- [ ] HSV value inspector
+- [ ] Frame latency analyzer
+
+---
+
+## 🔬 Current Focus
+
+Color detection is intentionally **simple**:
+
+- No calibration yet
+- No object shape detection
+- No bounding boxes
+- Just **“what color is currently visible?”**
+
+Calibration and persistence will be handled in a **separate feature flow**, not mixed with probing logic.
+
+---
+
+## 🛠 Tech Stack
+
+- **Language**: Kotlin
+- **Camera**: CameraX
+- **UI**: XML (Classic) & Jetpack Compose
+- **Architecture**: Activity-based
+- **Min SDK**: 28+
+
+---
+
+## ⚠️ Disclaimer
+
+This project is:
 - ❌ Not production-ready
-- ❌ No stability guarantee
-- ✅ Safe for learning & exploration
+- ❌ Not optimized for performance
+- ❌ Not a full computer vision framework
+
+This project is intended for:
+- Learning CameraX
+- Understanding vision pipelines
+- Comparing UI approaches
+- Rapid experimentation
 
 ---
 
-### ✅ Current Capabilities & Progress
+## 🚀 Next Planned Feature
 
-> This project is under active experimentation.  
-> Features may change, break, or be removed at any time.
-
-#### Camera & Analysis
-- [x] CameraX preview
-- [x] ImageAnalysis pipeline
-- [x] Real-time frame access
-- [ ] Orientation & rotation handling
-- [ ] FPS monitoring & performance metrics
-
-#### Vision Experiments
-- [ ] Image pre-processing (resize, blur, normalization)
-- [ ] Color detection (HSV-based)
-- [ ] Shape detection (circle / contour)
-- [ ] Object position estimation (left / center / right)
-- [ ] Object size → distance estimation
-
-#### Architecture
-- [x] Multi-module Gradle setup
-- [x] Modular separation (early stage)
-- [ ] Fully isolated camera module
-- [ ] Reusable vision processing module
-- [ ] Clear domain / decision layer
-
-#### UI Experiments
-- [x] Classic Activity (XML)
-- [x] Jetpack Compose
-- [x] Hybrid UI approach
-- [ ] Debug overlay (bounding boxes, text)
-- [ ] Runtime feature toggles
-
-#### Experimental Status
-- [x] Educational / lab-focused
-- [x] Not production-ready
-- [ ] Performance benchmarking
-- [ ] Comparative experiments (OpenCV vs alternatives)
-
----
-
-## Bahasa Indonesia
-
-### 📌 Gambaran Umum
-**CameraX Vision Labs** adalah **proyek laboratorium eksperimental** yang dibuat untuk mempelajari dan mengeksplorasi berbagai hal yang bisa dilakukan menggunakan **CameraX** di Android.
-
-Proyek ini **bukan untuk production**.  
-Fokus utamanya adalah **eksperimen, pembelajaran, dan eksplorasi teknis**.
-
-### 🎯 Tujuan Proyek
-- Memahami **dasar hingga lanjutan CameraX**
-- Eksplorasi **image analysis real-time**
-- Implementasi **pipeline visi komputer**
-- Mencoba **arsitektur multi-module**
-- Menggabungkan **Activity klasik** dan **Jetpack Compose**
-- Bebas bereksperimen tanpa batasan production
-
-### 🧪 Ruang Lingkup Eksperimen
-Proyek ini mencakup:
-- Preview kamera & analisis frame
-- Pemrosesan gambar
-- Deteksi warna & bentuk
-- Penentuan posisi & ukuran objek
-- Pengujian performa (FPS, latency)
-- Eksperimen arsitektur
-
-> ⚠️ Wajar jika ada fitur setengah jadi, berubah-ubah, atau dirombak ulang.
-
-### 🧱 Eksperimen Arsitektur
-- Struktur project multi-module
-- Pemisahan tanggung jawab:
-    - Kamera
-    - Vision processing
-    - Logika keputusan
-    - UI
-- Hybrid UI:
-    - XML + Activity klasik
-    - Jetpack Compose
-
-### 🛠️ Teknologi
-- Kotlin
-- CameraX
-- OpenCV (opsional / eksperimental)
-- Jetpack Compose
-- Android View System (XML)
-- Gradle multi-module
-
-### 🚧 Status Proyek
-**LAB / EKSPERIMENTAL**
-
-- ❌ Bukan untuk production
-- ❌ Tidak menjamin stabilitas
-- ✅ Cocok untuk belajar & eksplorasi
-
----
-
-### ✅ Kemampuan & Progres Saat Ini
-
-> Proyek ini masih dalam tahap eksperimen aktif.  
-> Fitur dapat berubah, rusak, atau dihapus sewaktu-waktu.
-
-#### Kamera & Analisis
-- [x] Preview CameraX
-- [x] Pipeline ImageAnalysis
-- [x] Akses frame secara real-time
-- [ ] Penanganan rotasi & orientasi
-- [ ] Monitoring FPS & performa
-
-#### Eksperimen Vision
-- [ ] Pre-processing gambar (resize, blur, normalisasi)
-- [ ] Deteksi warna (HSV)
-- [ ] Deteksi bentuk (lingkaran / kontur)
-- [ ] Estimasi posisi objek (kiri / tengah / kanan)
-- [ ] Estimasi jarak berdasarkan ukuran objek
-
-#### Arsitektur
-- [x] Setup multi-module Gradle
-- [x] Pemisahan modul (tahap awal)
-- [ ] Modul kamera terisolasi penuh
-- [ ] Modul vision yang reusable
-- [ ] Layer domain / decision yang jelas
-
-#### Eksperimen UI
-- [x] Activity klasik (XML)
-- [x] Jetpack Compose
-- [x] Pendekatan UI hybrid
-- [ ] Overlay debug (bounding box, teks)
-- [ ] Toggle fitur saat runtime
-
-#### Status Eksperimental
-- [x] Fokus edukasi / lab
-- [x] Bukan untuk production
-- [ ] Benchmark performa
-- [ ] Eksperimen perbandingan (OpenCV vs alternatif)
+### Object Detection
+- Start with single object
+- No ML framework initially
+- Focus on:
+    - object presence
+    - bounding region
+    - relative position
